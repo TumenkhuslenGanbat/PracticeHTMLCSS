@@ -1,6 +1,82 @@
-.bg-img {
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-.container {
-    text-align: center;
+
+body{
+    height: 100vh;
+    background-color: whitesmoke;
+    background-image: url("https://aboffs.com/cdn/shop/products/2156-60-softbeige_0120c21d-2b90-4496-b14f-140df8646403_2000x.png?v=1587101698");
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: midnightblue;
+    font-size: 1rem;
+}
+a:hover{
+    color:palevioletred;
+}
+
+/*Header*/
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle-btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn{
+    background-color: palevioletred;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease-in;
+}
+
+.action-btn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+.action-btn:active{
+    scale: 0.95;
+
 }
