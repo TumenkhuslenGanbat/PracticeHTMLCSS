@@ -8,26 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="assets/UKEnglishLogo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <button class="material-icons" onclick="myFunction()">menu</button>            
                 <ul>
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#home">ABOUT</a></li>
-                    <li><a href="#home">COURSE</a></li>
-                    <li><a href="#home">SIGN UP</a></li>
-                    <li><a href="#home">CONTACT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#course">COURSE</a></li>
+                    <li><a href="#signup">SIGN UP</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
         <div class="text-box">
             <h1>Англи хэлээ бодит хэрэглээгээр сурцгаая!</h1>
-            <p>Манай онлайн анли хэлний курс нь үг цээжлэх, дүрмийн ном уншихаас илүүтэй англи хэлийг өдөр тутмын хэрэглээнд сургахад чиглэсэн.</p>
-            <a href="">Visit us to know more</a>
+            <p>Манай онлайн анли хэлний курс нь үг цээжлэх, дүрмийн ном уншихаас илүүтэй <br>англи хэлийг өдөр тутмын хэрэглээнд сургахад чиглэсэн.</p>
+            <a href="" class="visit-btn">Visit us to know more</a>
         </div>
     </section>
+    <script>
+        function myFunction(){
+    var navLinks = document.getElementById("navLinks");
+    if (navLinks.document.style.display === "none"){
+        navLinks.style.display = "block";
+    } else {
+        navLinks.style.display = "none";
+    }
+}
+    </script>
 </body>
 </html>
